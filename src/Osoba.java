@@ -8,11 +8,33 @@ public class Osoba {
     private String nazwisko;
     private int wiek;
 
-    // Konstruktor
+    // Przeciążąnie konstruktora
+    // 3 konstruktory o różnych argumentach
     public Osoba(String imie, String nazwisko, int wiek) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.wiek = wiek;
+    }
+
+    public Osoba(String imie, String nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        // Można bez this. bo nazwa się nam nigdzie nie powtarza
+        wiek = 7;
+    }
+
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
+    }
+
+    public Osoba(){
+        imie = "";
+        nazwisko = "";
     }
 
     // Inwencja twórcza jak coś
