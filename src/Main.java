@@ -1,5 +1,8 @@
-public class `Main {
+public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Osoba osobaJas = new Osoba("Jaś","Kowalski",12);
+        System.out.println(osobaJas.przedstawSie());
+        osobaJas.imie = "Jacek";
+        System.out.println(osobaJas.przedstawSie());
     }
 }
