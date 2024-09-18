@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface Dyzurny {
+public interface Dyzurny {
+    abstract void wykonajDyzur();
+    // abstrakcyjna metoda nie ma ciała
 }
