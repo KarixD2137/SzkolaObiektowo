@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+
         //Osoba osobaJas = new Osoba("Jaś","Kowalski",12);
         //System.out.println(osobaJas.przedstawSie());
         //osobaJas.setImie("Jacek");
@@ -19,26 +20,28 @@ public class Main {
 
 
         Uczen uczen1 = new Uczen("Karol","Kopczyński", 16);
-        System.out.println(uczen1.getNrEwidencyjny());
         Uczen uczen2 = new Uczen("Adam","Krzak", 16);
-        System.out.println(uczen2.getNrEwidencyjny());
         Uczen uczen3 = new Uczen("Łukasz","Jurkiewicz", 17);
         Uczen uczen4 = new Uczen("Kacper","Istelski", 17);
 
-        System.out.println(uczen3.getNrEwidencyjny());
         ArrayList<String> przedmioty = new ArrayList<>();
         przedmioty.add("Informatyka");
         przedmioty.add("Programowanie stron internetowych");
-        Nauczyciel nauczyciel = new Nauczyciel("Jarosław","Szkabarnicki",55, przedmioty);
+        Nauczyciel nauczyciel1 = new Nauczyciel("Jarosław","Szkabarnicki",55, przedmioty);
+
+        przedmioty.add("Matematyka");
+        przedmioty.add("Informatyka");
+        przedmioty.add("Programowanie stron internetowych");
+        Nauczyciel nauczyciel2 = new Nauczyciel("Martyna","Dudek",40, przedmioty);
 
 
 
-        Klasa klasaP = new Klasa("3P", nauczyciel);
+        Klasa klasaP = new Klasa("3P", nauczyciel1);
         klasaP.dodajUczniaDoKlasy(uczen1);
         klasaP.dodajUczniaDoKlasy(uczen2);
         klasaP.dodajUczniaDoKlasy(uczen3);
 
-        Klasa klasaA = new Klasa("3A", nauczyciel);
+        Klasa klasaA = new Klasa("3A/E", nauczyciel2);
         klasaA.dodajUczniaDoKlasy(uczen4);
 
 

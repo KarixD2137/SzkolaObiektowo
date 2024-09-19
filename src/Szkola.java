@@ -23,11 +23,6 @@ public class Szkola {
         uczniowie.add(uczen);
     }
 
-    public void dodajKlase(Klasa klasa)
-    {
-        klasy.add(klasa);
-    }
-
     public void dodajUczeniaDoSzkoly(String imie, String nazwisko, int wiek)
     {
         uczniowie.add(new Uczen(imie, nazwisko, wiek));
