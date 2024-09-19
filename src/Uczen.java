@@ -25,7 +25,7 @@ public class Uczen extends Osoba implements Dyzurny{
 
     @Override
     public String toString() {
-        return "Uczen imie" + getImie() +
+        return "{Uczen imie=" + getImie() + ", " +
                 "nrEwidencyjny=" + nrEwidencyjny +
                 '}';
     }

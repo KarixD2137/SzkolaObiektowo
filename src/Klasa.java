@@ -32,6 +32,12 @@ public class Klasa {
         }
     }
 
+    public void usunUczniaZKlasy(Uczen uczen)
+    {
+        uczniowie.remove(uczen);
+    }
+
+
     public void wypiszListeUczniow(){
         for (Uczen uczen : uczniowie)
         {
