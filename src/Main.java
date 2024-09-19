@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         //Osoba osobaJas = new Osoba("Jaś","Kowalski",12);
@@ -22,5 +24,16 @@ public class Main {
         System.out.println(uczen2.getNrEwidencyjny());
         Uczen uczen3 = new Uczen("Łukasz","Jurkiewicz", 17);
         System.out.println(uczen3.getNrEwidencyjny());
+        ArrayList<String> przedmioty = new ArrayList<>();
+        przedmioty.add("Fizyka");
+        przedmioty.add("Matematyka");
+        Nauczyciel nauczyciel = new Nauczyciel("Ryszard","Siedlarz",45, przedmioty);
+        Klasa klasaP = new Klasa("3P", nauczyciel);
+        klasaP.dodajUczniaDoKlasy(uczen1);
+        klasaP.dodajUczniaDoKlasy(uczen2);
+        klasaP.dodajUczniaDoKlasy(uczen3);
+        klasaP.dodajUczniaDoKlasy(uczen3);
+        klasaP.dodajUczniaDoKlasy(uczen3);
+        System.out.println(klasaP);
     }
 }
